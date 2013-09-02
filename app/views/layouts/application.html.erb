@@ -9,30 +9,32 @@
 <body>
 
 <div class="container-fluid">
-	<div class="row-fluid">
-		<div class="span12">
-			<div class="hero-unit" style="border-radius:0px;background-color:#202724;color:#F8FDD8;height:200px">
-				<%= image_tag "side-hero.png", class:"pull-right" %>
+	<div class="row-fluid" style="border-radius:0px;background-color:#202724;color:#F8FDD8;height:100%;margin-bottom:2%">
+		<div class="hero-unit" style="border-radius:0px;background-color:#202724;color:#F8FDD8;height:100%">		
+			<div class = "span8">
 				<h1> Team JAM <small>short description about the team</small> </h1>
+					<div id="team-members">
+						<div class="member pull-left">
+							<%= gravatar_image_tag(@justine, class:"img-circle", size:32) %>
+							<p style="text-align:center"> Justine </p>
+						</div>
 
-				<div id="team-members">
-					<div class="member pull-left">
-						<%= gravatar_image_tag(@justine, class:"img-circle", size:32) %>
-						<p style="text-align:center"> Justine </p>
-					</div>
+						<div class="member pull-left">
+							<%= gravatar_image_tag(@axel, class:"img-circle", size:32) %>
+							<p style="text-align:center"> Axel </p>
+						</div>
 
-					<div class="member pull-left">
-						<%= gravatar_image_tag(@axel, class:"img-circle", size:32) %>
-						<p style="text-align:center"> Axel </p>
-					</div>
-
-					<div class="member pull-left">
-						<%= gravatar_image_tag(@mark, class:"img-circle", size:32) %>
-						<p style="text-align:center"> Mark </p>
-					</div>
-				</div>
+						<div class="member pull-left">
+							<%= gravatar_image_tag(@mark, class:"img-circle", size:32) %>
+							<p style="text-align:center"> Mark </p>
+						</div>
+					</div>	
 			</div>
-		</div>
+		
+			<div class = "span4">
+				<%= image_tag "side-hero.png", class:"pull-left" %>
+			</div>	
+		</div>	
 	</div>
 
 	<div class="row-fluid">
