@@ -16,9 +16,29 @@ jQuery ->
 
 	$('.axel').on "click", (e) ->
 		e.preventDefault()
+		window.open($(this).prop('href'))		
+
+	$('.facebook').on "click", (e) ->
+		e.preventDefault()
 		window.open($(this).prop('href'))			
+
+	$('.twitter').on "click", (e) ->
+		e.preventDefault()
+		window.open($(this).prop('href'))		
+
+	$('.linkedin').on "click", (e) ->
+		e.preventDefault()
+		window.open($(this).prop('href'))	
+
+	$('.google').on "click", (e) ->
+		e.preventDefault()
+		window.open($(this).prop('href'))		
 
 	$('#testing').on "click", (e) ->
 		e.preventDefault()
-		alert("a");
+		$('#edit_account').modal('show')
+
+	$('#edit_close').on "click", (e) ->
+		e.preventDefault()
+		$('#edit_account').modal('hide')
 
