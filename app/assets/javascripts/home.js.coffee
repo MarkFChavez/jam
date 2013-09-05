@@ -14,6 +14,10 @@ jQuery ->
 		window.open($(this).prop('href'))		
 
 
+	$('.axel').on "click", (e) ->
+		e.preventDefault()
+		window.open($(this).prop('href'))			
+
 	$('#testing').on "click", (e) ->
 		e.preventDefault()
 		alert("a");
